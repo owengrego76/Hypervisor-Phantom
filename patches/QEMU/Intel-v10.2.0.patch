@@ -1299,7 +1299,7 @@ index b72e484..514b6ac 100644
  #define PCI_DEVICE_ID_INTEL_82551IT      0x1209
  #define PCI_DEVICE_ID_INTEL_82557        0x1229
 -#define PCI_DEVICE_ID_INTEL_82801IR      0x2922
-+#define PCI_DEVICE_ID_INTEL_82801IR      0x463D // Intel 82801IR ICH9 - LPC Bridge [A2] | Intel Device ID Replacement from 0x2922 | hw/ide/ich.c
++#define PCI_DEVICE_ID_INTEL_82801IR      0x06d2 // Intel 82801IR ICH9 - LPC Bridge [A2] | Intel Device ID Replacement from 0x2922 | hw/ide/ich.c
  
  /* Red Hat / Qumranet (for QEMU) -- see pci-ids.txt */
 -#define PCI_VENDOR_ID_REDHAT_QUMRANET    0x1af4
@@ -1319,7 +1319,7 @@ index b72e484..514b6ac 100644
 -#define PCI_DEVICE_ID_REDHAT_BRIDGE      0x0001
 -#define PCI_DEVICE_ID_REDHAT_SERIAL      0x0002
 +#define PCI_VENDOR_ID_REDHAT             0x8086 // "Red Hat, Inc." | Intel Vendor ID Replacement from 0x1b36
-+#define PCI_DEVICE_ID_REDHAT_BRIDGE      0x4641 // "QEMU PCI-PCI bridge" | Intel Device ID Replacement from 0x0001 | hw/pci-bridge/pci_bridge_dev.c
++#define PCI_DEVICE_ID_REDHAT_BRIDGE      0x9b53 // "QEMU PCI-PCI bridge" | Intel Device ID Replacement from 0x0001 | hw/pci-bridge/pci_bridge_dev.c
 +#define PCI_DEVICE_ID_REDHAT_SERIAL      0x0002 // TODO: find device_id | Intel Device ID Replacement from 0x???? | hw/char/serial-pci.c
  #define PCI_DEVICE_ID_REDHAT_SERIAL2     0x0003
  #define PCI_DEVICE_ID_REDHAT_SERIAL4     0x0004
@@ -1327,15 +1327,15 @@ index b72e484..514b6ac 100644
  #define PCI_DEVICE_ID_REDHAT_ROCKER      0x0006
  #define PCI_DEVICE_ID_REDHAT_SDHCI       0x0007
 -#define PCI_DEVICE_ID_REDHAT_PCIE_HOST   0x0008
-+#define PCI_DEVICE_ID_REDHAT_PCIE_HOST   0x4641 // "QEMU PCIe Host bridge" | Intel Device ID Replacement from 0x0008 | hw/pci-host/gpex.c
++#define PCI_DEVICE_ID_REDHAT_PCIE_HOST   0x9b53 // "QEMU PCIe Host bridge" | Intel Device ID Replacement from 0x0008 | hw/pci-host/gpex.c
  #define PCI_DEVICE_ID_REDHAT_PXB         0x0009
  #define PCI_DEVICE_ID_REDHAT_BRIDGE_SEAT 0x000a
  #define PCI_DEVICE_ID_REDHAT_PXB_PCIE    0x000b
 -#define PCI_DEVICE_ID_REDHAT_PCIE_RP     0x000c
 -#define PCI_DEVICE_ID_REDHAT_XHCI        0x000d
 -#define PCI_DEVICE_ID_REDHAT_PCIE_BRIDGE 0x000e
-+#define PCI_DEVICE_ID_REDHAT_PCIE_RP     0x51b0 // "QEMU PCIe Root Port" | Intel Device ID Replacement from 0x000c | hw/pci-bridge/gen_pcie_root_port.c
-+#define PCI_DEVICE_ID_REDHAT_XHCI        0x51ed // "QEMU XHCI Host Controller" | Intel Device ID Replacement from 0x000d | hw/usb/hcd-xhci-pci.c
++#define PCI_DEVICE_ID_REDHAT_PCIE_RP     0x06b0 // "QEMU PCIe Root Port" | Intel Device ID Replacement from 0x000c | hw/pci-bridge/gen_pcie_root_port.c
++#define PCI_DEVICE_ID_REDHAT_XHCI        0x06ed // "QEMU XHCI Host Controller" | Intel Device ID Replacement from 0x000d | hw/usb/hcd-xhci-pci.c
 +#define PCI_DEVICE_ID_REDHAT_PCIE_BRIDGE 0x51b0 // "Red Hat, Device ID: 000E" | Intel Device ID Replacement from 0x000e | hw/pci-bridge/pcie_pci_bridge.c
  #define PCI_DEVICE_ID_REDHAT_MDPY        0x000f
  #define PCI_DEVICE_ID_REDHAT_NVME        0x0010
@@ -1369,10 +1369,10 @@ index 16034aa..e75f41a 100644
  #define PCI_DEVICE_ID_INTEL_ICH9_4       0x2914
  #define PCI_DEVICE_ID_INTEL_ICH9_5       0x2919
 -#define PCI_DEVICE_ID_INTEL_ICH9_6       0x2930
-+#define PCI_DEVICE_ID_INTEL_ICH9_6       0x51a3 // Type: System Device | Category: SMBus Controller | PCI Class: 0x0c05 | hw/i2c/smbus_ich9.c
++#define PCI_DEVICE_ID_INTEL_ICH9_6       0x06a3 // Type: System Device | Category: SMBus Controller | PCI Class: 0x0c05 | hw/i2c/smbus_ich9.c
  #define PCI_DEVICE_ID_INTEL_ICH9_7       0x2916
 -#define PCI_DEVICE_ID_INTEL_ICH9_8       0x2918
-+#define PCI_DEVICE_ID_INTEL_ICH9_8       0x5182 // Type: Bridge Device | Category: LPC Controller   | PCI Class: 0x0601 | hw/isa/lpc_ich9.c
++#define PCI_DEVICE_ID_INTEL_ICH9_8       0x0685 // Type: Bridge Device | Category: LPC Controller   | PCI Class: 0x0601 | hw/isa/lpc_ich9.c
  
  #define PCI_DEVICE_ID_INTEL_82801I_UHCI1 0x2934
  #define PCI_DEVICE_ID_INTEL_82801I_UHCI2 0x2935
@@ -1381,7 +1381,7 @@ index 16034aa..e75f41a 100644
  #define PCI_DEVICE_ID_INTEL_82599_SFP_VF 0x10ed
  
 -#define PCI_DEVICE_ID_INTEL_P35_MCH      0x29c0
-+#define PCI_DEVICE_ID_INTEL_P35_MCH      0x4641 // Type: Bridge Device | Category: Host Bridge | PCI Class: 0x0600 | hw/pci-host/q35.c
++#define PCI_DEVICE_ID_INTEL_P35_MCH      0x9b53 // Type: Bridge Device | Category: Host Bridge | PCI Class: 0x0600 | hw/pci-host/q35.c
  
  #define PCI_VENDOR_ID_XEN                0x5853
  #define PCI_DEVICE_ID_XEN_PLATFORM       0x0001
